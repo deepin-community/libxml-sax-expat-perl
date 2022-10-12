@@ -1,0 +1,33 @@
+Source: libxml-sax-expat-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Niko Tyni <ntyni@debian.org>,
+           gregor herrmann <gregoa@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper (>= 10)
+Build-Depends-Indep: perl,
+                     libxml-namespacesupport-perl,
+                     libxml-parser-perl,
+                     libxml-sax-perl,
+                     libtest-pod-perl,
+                     libtest-pod-coverage-perl
+Standards-Version: 4.1.4
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libxml-sax-expat-perl
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libxml-sax-expat-perl.git
+Homepage: https://metacpan.org/release/XML-SAX-Expat
+
+Package: libxml-sax-expat-perl
+Architecture: all
+Depends: ${misc:Depends},
+         ${perl:Depends},
+         libxml-namespacesupport-perl,
+         libxml-parser-perl,
+         libxml-sax-perl
+Suggests: libxml-sax-expatxs-perl
+Description: Perl module for a SAX2 driver for Expat (XML::Parser)
+ The XML::SAX::Expat module is an implementation of a SAX2 driver sitting on
+ top of Expat (XML::Parser). It is still incomplete, though most of the basic
+ SAX2 events should be available.
+ .
+ The libxml-sax-expatxs-perl provides an Expat XML parser as an XS module.
